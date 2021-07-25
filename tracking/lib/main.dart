@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'add.dart';
+import 'myappbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +28,7 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
-  @override
+  @override 
   _MyHomePageState createState() => _MyHomePageState();
 }
 
@@ -45,14 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
    
     return Scaffold(
-      appBar: AppBar(title: Text(
-        'Tracking',
-        style: TextStyle(fontFamily: 'segoeui', fontStyle: FontStyle.italic, fontWeight: FontWeight.w200),
-        ),
-        centerTitle: true,
-        // titleTextStyle: TextStyle(fontFamily: "segoeui"),
-        backgroundColor: Color(0xff5B83AD),
-      ),
+      appBar: MyAppBar(),
       body: Center(
         
         child: Column(

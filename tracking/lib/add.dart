@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'myappbar.dart';
 
 class add extends StatefulWidget {
   const add({Key key}) : super(key: key);
@@ -14,18 +15,7 @@ class _addState extends State<add> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Tracking',
-          style: TextStyle(
-              fontFamily: 'segoeui',
-              fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.w200),
-        ),
-        centerTitle: true,
-        // titleTextStyle: TextStyle(fontFamily: "segoeui"),
-        backgroundColor: Color(0xff5B83AD),
-      ),
+      appBar: MyAppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
